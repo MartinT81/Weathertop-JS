@@ -1,43 +1,47 @@
 "use strict";
 
+const accounts = require("./accounts.js");
 const logger = require("../utils/logger");
-const playlistStore = require('../models/playlist-store');
-const uuid = require('uuid');
-const accounts = require ('./accounts.js');
+const stationStore = require("../models/station-store");
+const uuid = require("uuid");
 
 const dashboard = {
   index(request, response) {
-    logger.info('dashboard rendering');
-    const loggedInUser = accounts.getCurrentUser(request);
-    const viewData = {
-      title: 'Station Dashboard',
-      playlists: playlistStore.getUserPlaylists(loggedInUser.id),
-    };
-    logger.info('about to render', playlistStore.getAllPlaylists());
-    response.render('dashboard', viewData);
+
+    try {
+      logger.info("Rendering Dashboard");
+      const loggedInUser = accounts.getCurrentUser(request);
+      const viewData = {
+        title: "Dashboard",
+        stations: stationStore.getUserStations(loggedInUser.id)
+      };
+      response.render("dashboard", viewData);
+    } catch (err) {
+      response.redirect("/login");
+    }
   },
-  
-  
-    deletePlaylist(request, response) {
-    const playlistId = request.params.id;
-    logger.debug(`Deleting Playlist ${playlistId}`);
-    playlistStore.removePlaylist(playlistId);
-    response.redirect('/dashboard');
+
+  deleteStation(request, response) {
+    const stationId = request.params.id;
+    logger.info("Deleting Station: " + stationStore.getStation(stationId).name);
+    stationStore.removeStation(stationId);
+    response.redirect("/dashboard");
   },
-  
-  addPlaylist(request, response) {
+
+  addStation(request, response) {
     const loggedInUser = accounts.getCurrentUser(request);
-    const newPlayList = {
+    const newStation = {
       id: uuid.v1(),
       userid: loggedInUser.id,
-      title: request.body.title,
-      songs: [],
+      name: request.body.name,
+      latitude: request.body.latitude,
+      longitude: request.body.longitude,
+      report: {},
+      readings: []
     };
-    logger.debug('Creating a new Playlist', newPlayList);
-    playlistStore.addPlaylist(newPlayList);
-    response.redirect('/dashboard');
-  },
-
+    logger.info("Adding Station: " + newStation.name);
+    stationStore.addStation(newStation);
+    response.redirect("/dashboard");
+  }
 };
-
 module.exports = dashboard;
