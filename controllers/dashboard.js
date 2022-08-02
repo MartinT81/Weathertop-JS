@@ -1,15 +1,43 @@
 "use strict";
 
 const logger = require("../utils/logger");
+const playlistStore = require('../models/playlist-store');
+const uuid = require('uuid');
+const accounts = require ('./accounts.js');
 
 const dashboard = {
   index(request, response) {
-    logger.info("dashboard rendering");
+    logger.info('dashboard rendering');
+    const loggedInUser = accounts.getCurrentUser(request);
     const viewData = {
-      title: "Template 1 Dashboard",
+      title: 'Station Dashboard',
+      playlists: playlistStore.getUserPlaylists(loggedInUser.id),
     };
-    response.render("dashboard", viewData);
+    logger.info('about to render', playlistStore.getAllPlaylists());
+    response.render('dashboard', viewData);
   },
+  
+  
+    deletePlaylist(request, response) {
+    const playlistId = request.params.id;
+    logger.debug(`Deleting Playlist ${playlistId}`);
+    playlistStore.removePlaylist(playlistId);
+    response.redirect('/dashboard');
+  },
+  
+  addPlaylist(request, response) {
+    const loggedInUser = accounts.getCurrentUser(request);
+    const newPlayList = {
+      id: uuid.v1(),
+      userid: loggedInUser.id,
+      title: request.body.title,
+      songs: [],
+    };
+    logger.debug('Creating a new Playlist', newPlayList);
+    playlistStore.addPlaylist(newPlayList);
+    response.redirect('/dashboard');
+  },
+
 };
 
 module.exports = dashboard;
