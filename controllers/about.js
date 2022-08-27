@@ -4,12 +4,12 @@ const logger = require("../utils/logger");
 
 const about = {
   index(request, response) {
-    logger.info("about rendering");
+    logger.info("About rendering");
     const viewData = {
-      title: "About Weathertop",
+      title: "About"
     };
     response.render("about", viewData);
-  },
+  }
 };
-
 module.exports = about;
+

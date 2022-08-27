@@ -3,43 +3,33 @@
     {
       "id": "3037bad0-13c0-11ec-aa9a-8d95afbd8f85",
       "userid": "dc725050-09e6-11ec-a2c3-b7fd0fd485ab",
-      "name": "Ballinrobe, Co. Mayo",
+      "name": "Blarney, Co. Cork",
       "latitude": "53.6333",
       "longitude": "-9.2333",
       "report": {
-        "time": "12/9/2021, 22:40:27",
-        "code": 803,
-        "conditions": "Broken clouds: 51-84%",
+        "time": "8/26/2022, 2:30:44 PM",
+        "code": 802,
+        "conditions": "Scattered clouds: 25-50%",
         "icon": "cloud",
-        "tempC": 12.09,
-        "tempF": 53.76,
-        "windSpeed": 2.66,
+        "tempC": 15.89,
+        "tempF": 60.6,
+        "windSpeed": 2.63,
         "beaufort": 1,
-        "windChill": 12.94,
-        "windDirection": 83,
-        "windCompass": "E",
-        "pressure": 1020,
+        "windChill": 17.08,
+        "windDirection": 297,
+        "windCompass": "WNW",
+        "pressure": 1021,
         "minTemp": 12.09,
-        "maxTemp": 14.67,
-        "tempTrend": "arrow down",
-        "minWind": 2.41,
-        "maxWind": 3.17,
+        "maxTemp": 15.89,
+        "tempTrend": "arrow up",
+        "minWind": 1.58,
+        "maxWind": 2.66,
         "windTrend": "arrows alternate horizontal",
-        "minPressure": 1010,
-        "maxPressure": 1020,
-        "pressureTrend": "arrow up"
+        "minPressure": 1014,
+        "maxPressure": 1021,
+        "pressureTrend": "arrows alternate horizontal"
       },
       "readings": [
-        {
-          "id": "7d155220-13f4-11ec-872e-f5effca13f75",
-          "time": "10/9/2021, 19:08:53",
-          "input": "Manual",
-          "code": 803,
-          "temperature": 14.67,
-          "windSpeed": 3.17,
-          "windDirection": 39,
-          "pressure": 1010
-        },
         {
           "id": "5d84a990-1405-11ec-8d30-9f0c46fb5ac5",
           "time": "11/9/2021, 21:09:41",
@@ -59,6 +49,209 @@
           "windSpeed": 2.66,
           "windDirection": 83,
           "pressure": 1020
+        },
+        {
+          "id": "e0927db0-213a-11ed-85e7-150fac738fd0",
+          "time": "8/21/2022, 10:20:27 AM",
+          "input": "Auto",
+          "code": 804,
+          "temperature": 14.95,
+          "windSpeed": 1.58,
+          "windDirection": 237,
+          "pressure": 1014
+        },
+        {
+          "id": "ab2dbdf0-254b-11ed-adfe-cd9414728c9f",
+          "time": "8/26/2022, 2:30:44 PM",
+          "input": "Auto",
+          "code": 802,
+          "temperature": 15.89,
+          "windSpeed": 2.63,
+          "windDirection": 297,
+          "pressure": 1021
+        }
+      ]
+    },
+    {
+      "id": "040a3130-213a-11ed-9103-93f91e468f06",
+      "userid": "1621aa60-1d8e-11ed-8e10-65306850a396",
+      "latitude": "123",
+      "longitude": "125",
+      "report": {
+        "time": "8/21/2022, 10:18:15 AM",
+        "code": 301,
+        "conditions": "Drizzle",
+        "icon": "cloud rain",
+        "tempC": 24,
+        "tempF": 75.2,
+        "windSpeed": 21,
+        "beaufort": 4,
+        "windChill": 25.02,
+        "windDirection": 100,
+        "windCompass": "E",
+        "pressure": 909,
+        "minTemp": 24,
+        "maxTemp": 24,
+        "tempTrend": "arrows alternate horizontal",
+        "minWind": 21,
+        "maxWind": 21,
+        "windTrend": "arrows alternate horizontal",
+        "minPressure": 909,
+        "maxPressure": 909,
+        "pressureTrend": "arrows alternate horizontal"
+      },
+      "readings": [
+        {
+          "id": "14a179e0-213a-11ed-9103-93f91e468f06",
+          "time": "8/21/2022, 10:14:45 AM",
+          "input": "Manual",
+          "code": 301,
+          "temperature": 24,
+          "windSpeed": 21,
+          "windDirection": 100,
+          "pressure": 909
+        },
+        {
+          "id": "65288ed0-213a-11ed-b5d2-43af6c7621cb",
+          "time": "8/21/2022, 10:17:00 AM",
+          "input": "Manual",
+          "code": 301,
+          "temperature": 24,
+          "windSpeed": 21,
+          "windDirection": 100,
+          "pressure": 909
+        },
+        {
+          "id": "91dd69a0-213a-11ed-85e7-150fac738fd0",
+          "time": "8/21/2022, 10:18:15 AM",
+          "input": "Manual",
+          "code": 301,
+          "temperature": 24,
+          "windSpeed": 21,
+          "windDirection": 100,
+          "pressure": 909
+        }
+      ]
+    },
+    {
+      "id": "1f5504c0-2481-11ed-91aa-d9cbac6c8669",
+      "userid": "dc725050-09e6-11ec-a2c3-b7fd0fd485ab",
+      "latitude": "12",
+      "longitude": "7",
+      "report": {
+        "time": "8/27/2022, 7:42:56 AM",
+        "code": 301,
+        "conditions": "Drizzle",
+        "icon": "cloud rain",
+        "tempC": 9,
+        "tempF": 48.2,
+        "windSpeed": 8,
+        "beaufort": 2,
+        "windChill": 7.83,
+        "windDirection": 120,
+        "windCompass": "ESE",
+        "pressure": 909,
+        "minTemp": 9,
+        "maxTemp": 23,
+        "tempTrend": "arrows alternate horizontal",
+        "minWind": 4.25,
+        "maxWind": 12,
+        "windTrend": "arrows alternate horizontal",
+        "minPressure": 909,
+        "maxPressure": 1011,
+        "pressureTrend": "arrow down"
+      },
+      "readings": [
+        {
+          "id": "6e44a6f0-25d8-11ed-88a0-75bce82abcb5",
+          "time": "8/27/2022, 7:18:21 AM",
+          "input": "Auto",
+          "code": 500,
+          "temperature": 21.16,
+          "windSpeed": 4.25,
+          "windDirection": 222,
+          "pressure": 1011
+        },
+        {
+          "id": "7ec77d40-25d8-11ed-88a0-75bce82abcb5",
+          "time": "8/27/2022, 7:18:48 AM",
+          "input": "Manual",
+          "code": 202,
+          "temperature": 23,
+          "windSpeed": 12,
+          "windDirection": 200,
+          "pressure": 1001
+        },
+        {
+          "id": "dda72e20-25db-11ed-9edb-eb59de67ccda",
+          "time": "8/27/2022, 7:42:56 AM",
+          "input": "Manual",
+          "code": 301,
+          "temperature": 9,
+          "windSpeed": 8,
+          "windDirection": 120,
+          "pressure": 909
+        }
+      ]
+    },
+    {
+      "id": "0d529730-25dd-11ed-9edb-eb59de67ccda",
+      "userid": "dc725050-09e6-11ec-a2c3-b7fd0fd485ab",
+      "latitude": "5",
+      "longitude": "-2",
+      "report": {
+        "time": "8/27/2022, 7:52:50 AM",
+        "code": 501,
+        "conditions": "Moderate rain",
+        "icon": "cloud sun rain",
+        "tempC": 24.58,
+        "tempF": 76.24,
+        "windSpeed": 3.96,
+        "beaufort": 1,
+        "windChill": 26.37,
+        "windDirection": 217,
+        "windCompass": "SW",
+        "pressure": 1013,
+        "minTemp": 10,
+        "maxTemp": 24.58,
+        "tempTrend": "arrows alternate horizontal",
+        "minWind": 3.96,
+        "maxWind": 10,
+        "windTrend": "arrows alternate horizontal",
+        "minPressure": 908,
+        "maxPressure": 1013,
+        "pressureTrend": "arrows alternate horizontal"
+      },
+      "readings": [
+        {
+          "id": "2ff4b5c0-25dd-11ed-9edb-eb59de67ccda",
+          "time": "8/27/2022, 7:52:24 AM",
+          "input": "Manual",
+          "code": 211,
+          "temperature": 10,
+          "windSpeed": 10,
+          "windDirection": 220,
+          "pressure": 908
+        },
+        {
+          "id": "329418c0-25dd-11ed-9edb-eb59de67ccda",
+          "time": "8/27/2022, 7:52:28 AM",
+          "input": "Auto",
+          "code": 501,
+          "temperature": 24.58,
+          "windSpeed": 3.96,
+          "windDirection": 217,
+          "pressure": 1013
+        },
+        {
+          "id": "3f8b3040-25dd-11ed-9edb-eb59de67ccda",
+          "time": "8/27/2022, 7:52:50 AM",
+          "input": "Auto",
+          "code": 501,
+          "temperature": 24.58,
+          "windSpeed": 3.96,
+          "windDirection": 217,
+          "pressure": 1013
         }
       ]
     }

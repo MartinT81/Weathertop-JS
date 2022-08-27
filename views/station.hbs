@@ -1,0 +1,26 @@
+{{> menu}}
+
+<section class="ui segment">
+  {{#each stations}}
+   
+  {{/each}}
+</section>
+{{> addreading}}
+<div>
+  <div class="title">
+    <i class="ui segment"></i>
+    List of Readings
+  </div>
+  <div class="content">
+    {{> listreadings}}
+  </div>
+  <div class="active title">
+    Trend Charts
+  </div>
+  <div class="active content">
+    {{> trendchart}}
+  </div>
+</div>
+
+<script>$(".ui.accordion").accordion();</script>
+

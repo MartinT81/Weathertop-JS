@@ -1,61 +1,94 @@
-'use strict';
+"use strict";
 
-const userstore = require('../models/user-store');
-const logger = require('../utils/logger');
-const uuid = require('uuid');
+const logger = require("../utils/logger");
+const userStore = require("../models/user-store");
+const uuid = require("uuid");
 
 const accounts = {
-
   index(request, response) {
+    logger.info("Home rendering");
     const viewData = {
-      title: 'Login or Signup',
+      title: "Home"
     };
-    response.render('index', viewData);
+    response.render("index", viewData);
   },
 
   login(request, response) {
+    logger.info("Login rendering");
     const viewData = {
-      title: 'Login to the Service',
+      title: "Login"
     };
-    response.render('login', viewData);
+    response.render("login", viewData);
   },
 
   logout(request, response) {
-    response.cookie('playlist', '');
-    response.redirect('/');
+    logger.info("Logging out " + accounts.getCurrentUser(request).email);
+    response.cookie("station", "");
+    response.redirect("/");
   },
 
   signup(request, response) {
+    logger.info("Sign up rendering");
     const viewData = {
-      title: 'Login to the Service',
+      title: "Sign up"
     };
-    response.render('signup', viewData);
+    response.render("signup", viewData);
+  },
+
+  edit(request, response) {
+    logger.info("Edit details rendering");
+    const viewData = {
+      title: "Edit details",
+      user: accounts.getCurrentUser(request),
+    };
+    response.render("edit", viewData);
+  },
+
+  update(request, response) {
+    const user = accounts.getCurrentUser(request);
+    logger.info(user);
+    const updatedUser = request.body;
+    logger.info(updatedUser);
+    userStore.updateUser(user, updatedUser);
+    response.cookie("station", "");
+    response.redirect("/login");
   },
 
   register(request, response) {
     const user = request.body;
-    user.id = uuid.v1();
-    userstore.addUser(user);
-    logger.info(`registering ${user.email}`);
-    response.redirect('/');
+    let checkEmail = true;
+    const users = userStore.getAllUsers()
+
+    for (let i = 0; i < users.length; i++) {
+      if (request.body.email === users[i].email) {
+        checkEmail = false;
+      }
+    }
+
+    if (checkEmail) {
+      user.id = uuid.v1();
+      userStore.addUser(user);
+      logger.info(`Registering ${user.email}`);
+      response.redirect("/login");
+    } else {
+      response.redirect("/signup");
+    }
   },
 
   authenticate(request, response) {
-    const user = userstore.getUserByEmail(request.body.email);
-    const password = userstore.getUserByPassword (request.body.password);
-    if (user && password) {
-      response.cookie('playlist', user.email,);
-      logger.info(`logging in ${user.email}`);
-      response.redirect('/dashboard');
+    const user = userStore.getUserByEmail(request.body.email);
+    if ((user) && (user.password === request.body.password)) {
+      response.cookie("station", user.email);
+      logger.info(`Logging in ${user.email}`);
+      response.redirect("/dashboard");
     } else {
-      response.redirect('/login');
+      response.redirect("/login");
     }
   },
 
   getCurrentUser(request) {
-    const userEmail = request.cookies.playlist;
-    return userstore.getUserByEmail(userEmail);
-  },
+    const userEmail = request.cookies.station;
+    return userStore.getUserByEmail(userEmail);
+  }
 };
-
 module.exports = accounts;
