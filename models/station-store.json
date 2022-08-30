@@ -135,67 +135,6 @@
       ]
     },
     {
-      "id": "0d529730-25dd-11ed-9edb-eb59de67ccda",
-      "userid": "dc725050-09e6-11ec-a2c3-b7fd0fd485ab",
-      "latitude": "5",
-      "longitude": "-2",
-      "report": {
-        "time": "8/27/2022, 7:52:50 AM",
-        "code": 501,
-        "conditions": "Moderate rain",
-        "icon": "cloud sun rain",
-        "tempC": 24.58,
-        "tempF": 76.24,
-        "windSpeed": 3.96,
-        "beaufort": 1,
-        "windChill": 26.37,
-        "windDirection": 217,
-        "windCompass": "SW",
-        "pressure": 1013,
-        "minTemp": 10,
-        "maxTemp": 24.58,
-        "tempTrend": "arrows alternate horizontal",
-        "minWind": 3.96,
-        "maxWind": 10,
-        "windTrend": "arrows alternate horizontal",
-        "minPressure": 908,
-        "maxPressure": 1013,
-        "pressureTrend": "arrows alternate horizontal"
-      },
-      "readings": [
-        {
-          "id": "2ff4b5c0-25dd-11ed-9edb-eb59de67ccda",
-          "time": "8/27/2022, 7:52:24 AM",
-          "input": "Manual",
-          "code": 211,
-          "temperature": 10,
-          "windSpeed": 10,
-          "windDirection": 220,
-          "pressure": 908
-        },
-        {
-          "id": "329418c0-25dd-11ed-9edb-eb59de67ccda",
-          "time": "8/27/2022, 7:52:28 AM",
-          "input": "Auto",
-          "code": 501,
-          "temperature": 24.58,
-          "windSpeed": 3.96,
-          "windDirection": 217,
-          "pressure": 1013
-        },
-        {
-          "id": "3f8b3040-25dd-11ed-9edb-eb59de67ccda",
-          "time": "8/27/2022, 7:52:50 AM",
-          "input": "Auto",
-          "code": 501,
-          "temperature": 24.58,
-          "windSpeed": 3.96,
-          "windDirection": 217,
-          "pressure": 1013
-        }
-      ]
-    },
-    {
       "id": "ef61a2d0-2888-11ed-9006-e770b148d4c2",
       "userid": "ded4f860-25de-11ed-9edb-eb59de67ccda",
       "title": "Blarney",
@@ -368,6 +307,68 @@
           "windSpeed": 11,
           "windDirection": 145,
           "pressure": 1004
+        }
+      ]
+    },
+    {
+      "id": "0ab9bab0-288c-11ed-9006-e770b148d4c2",
+      "userid": "dc725050-09e6-11ec-a2c3-b7fd0fd485ab",
+      "title": "Tower, Co Cork",
+      "latitude": "55",
+      "longitude": "-10",
+      "report": {
+        "time": "8/30/2022, 5:50:07 PM",
+        "code": 781,
+        "conditions": "Tornado",
+        "icon": "exclamation triangle",
+        "tempC": 23,
+        "tempF": 73.4,
+        "windSpeed": 56,
+        "beaufort": 7,
+        "windChill": 23.13,
+        "windDirection": 200,
+        "windCompass": "SSW",
+        "pressure": 907,
+        "minTemp": -2,
+        "maxTemp": 23,
+        "tempTrend": "arrow up",
+        "minWind": 1,
+        "maxWind": 56,
+        "windTrend": "arrow up",
+        "minPressure": 907,
+        "maxPressure": 1027,
+        "pressureTrend": "arrows alternate horizontal"
+      },
+      "readings": [
+        {
+          "id": "1e75c300-288c-11ed-9006-e770b148d4c2",
+          "time": "8/30/2022, 5:49:38 PM",
+          "input": "Manual",
+          "code": 511,
+          "temperature": -2,
+          "windSpeed": 1,
+          "windDirection": 100,
+          "pressure": 1000
+        },
+        {
+          "id": "1fcf86a0-288c-11ed-9006-e770b148d4c2",
+          "time": "8/30/2022, 5:49:41 PM",
+          "input": "Auto",
+          "code": 801,
+          "temperature": 16.75,
+          "windSpeed": 4.72,
+          "windDirection": 74,
+          "pressure": 1027
+        },
+        {
+          "id": "2f9ffce0-288c-11ed-9006-e770b148d4c2",
+          "time": "8/30/2022, 5:50:07 PM",
+          "input": "Manual",
+          "code": 781,
+          "temperature": 23,
+          "windSpeed": 56,
+          "windDirection": 200,
+          "pressure": 907
         }
       ]
     }
