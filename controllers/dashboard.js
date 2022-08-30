@@ -21,7 +21,7 @@ const dashboard = {
   
     deleteStation(request, response) {
     const stationId = request.params.id;
-    logger.info("Deleting Station: " + stationStore.getStation(stationId).name);
+    logger.info("Deleting Station: " + stationStore.getStation(stationId).title);
     stationStore.removeStation(stationId);
     response.redirect("/dashboard");
   },
@@ -31,7 +31,7 @@ const dashboard = {
     const newStation = {
       id: uuid.v1(),
       userid: loggedInUser.id,
-      name: request.body.name,
+      title: request.body.title,
       latitude: request.body.latitude,
       longitude: request.body.longitude,
       report: {},

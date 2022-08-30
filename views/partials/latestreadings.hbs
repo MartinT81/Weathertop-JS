@@ -1,31 +1,58 @@
-<div class="ui card">
-<div class="content">
-  <h1 class="ui large header">Latest reading</h1>
-  {{#if readings.length}}
-    <table class="ui definition table">
-      <tbody>
-      <tr>
-        <td><i class="blue clock big icon"></i> Date/Time</td>
-        <td>{{report.time}}</td>
-      </tr>
-      <tr>
-        <td><i class="big {{report.icon}} blue icon"></i> Code</td>
-        <td>{{report.code}}
-          <br>
-          {{report.conditions}}
-        </td>
-      </tr>
-      <tr>
-        <td><i class="blue temperature high big icon"></i> Temperature</td>
-        <td>
-          {{report.tempC}} &#176C
+<section class="ui segment" action="/stations/${_station.id}/addlatestreadings" method="POST">
+    <div class="ui five inverted stackable cards">
+      
+        <div class="card">
+            <div class="content">
+            <h1 class="ui large header">{{title}}</h1>
+            </div>
+            <div class="extra">
+                <h3 class="header">
+                </h3>
+                <h4>
+                  Latitude: {{latitude}} &#176
+                <br>
+                  Longitude: {{longitude}} &#176
+                </h4>
+            </div>
+        </div>
+        <div class="card">
+            <div class="extra">
+                <h3 class="header">
+                    Weather <i class="${_station.latestWeather} right floated cloud sun icon large white"></i>
+                </h3>
+              
+                <h4 class="header"> {{report.conditions}}
+                </h4>
+                <h2 class="ui center aligned icon">
+                  <i class="blue {{report.icon}} large icon"></i>
+                </h2>
+            </div>
+        </div>
+        <div class="card">
+            <div class="extra">
+                <h3 class="header">
+                    Temp <i class="right floated temperature high icon large blue"></i>
+                </h3>
+              <i class="blue {{report.tempTrend}} icon"></i>
+                <h4 class="header">
+            {{report.tempC}} &#176C
           <br>
           {{report.tempF}} &#176F
-        </td>
-      </tr>
-      <tr>
-        <td><i class="blue wind big icon"></i> Wind</td>
-        <td>
+                    <br>
+                    Max: {{report.maxTemp}}
+                    <br>
+                    Min:  {{report.minTemp}}
+                </h4>
+            </div>
+        </div>
+        <div class="card">
+            <div class="extra">
+              
+                <h3 class="header">
+                    Wind <i class="right floated wind icon green extra large"></i>
+                </h3>
+              <i class="blue {{report.windTrend}} icon"></i>
+                <h4 class="header">
           {{report.windSpeed}} km/hr
           <br>
           {{report.beaufort}} bft
@@ -33,14 +60,26 @@
           Feels like: {{report.windChill}} &#176C
           <br>
           Direction: {{report.windCompass}} {{report.windDirection}} &#176
-        </td>
-      </tr>
-      <tr>
-        <td><i class="blue chart bar big icon"></i> Pressure</td>
-        <td>{{report.pressure}} hPa</td>
-      </tr>
-      </tbody>
-    </table>
-  </div>
-  {{/if}}
-</div>
+                </h4>
+            </div>
+        </div>
+        <div class="card">
+            <div class="extra">
+                <h3 class="header">
+                    Pressure <i class="right floated arrows alternate icon orange extra large"></i>
+                </h3>
+              <i class="blue {{report.pressureTrend}} icon"></i>
+                <h4 class="header">
+                    {{report.pressure}} hPa
+                    <br>
+                    Max: {{report.maxPressure}}
+                    <br>
+                    Min: {{report.minPressure}}
+                  <br>
+                  
+                </h4>
+            </div>
+        </div>
+    </div>
+  
+</section>
