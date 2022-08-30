@@ -3,43 +3,33 @@
     {
       "id": "3037bad0-13c0-11ec-aa9a-8d95afbd8f85",
       "userid": "dc725050-09e6-11ec-a2c3-b7fd0fd485ab",
-      "name": "Blarney, Co. Cork",
+      "title": "Blarney, Co. Cork",
       "latitude": "53.6333",
       "longitude": "-9.2333",
       "report": {
-        "time": "8/26/2022, 2:30:44 PM",
-        "code": 802,
-        "conditions": "Scattered clouds: 25-50%",
-        "icon": "cloud",
-        "tempC": 15.89,
-        "tempF": 60.6,
-        "windSpeed": 2.63,
+        "time": "8/30/2022, 2:19:10 PM",
+        "code": 801,
+        "conditions": "Few clouds: 11-25%",
+        "icon": "cloud sun",
+        "tempC": 20.69,
+        "tempF": 69.24,
+        "windSpeed": 3.81,
         "beaufort": 1,
-        "windChill": 17.08,
-        "windDirection": 297,
-        "windCompass": "WNW",
-        "pressure": 1021,
+        "windChill": 22.06,
+        "windDirection": 99,
+        "windCompass": "E",
+        "pressure": 1026,
         "minTemp": 12.09,
-        "maxTemp": 15.89,
+        "maxTemp": 20.69,
         "tempTrend": "arrow up",
         "minWind": 1.58,
-        "maxWind": 2.66,
-        "windTrend": "arrows alternate horizontal",
+        "maxWind": 3.81,
+        "windTrend": "arrow up",
         "minPressure": 1014,
-        "maxPressure": 1021,
-        "pressureTrend": "arrows alternate horizontal"
+        "maxPressure": 1026,
+        "pressureTrend": "arrow up"
       },
       "readings": [
-        {
-          "id": "5d84a990-1405-11ec-8d30-9f0c46fb5ac5",
-          "time": "11/9/2021, 21:09:41",
-          "input": "Auto",
-          "code": 804,
-          "temperature": 13.31,
-          "windSpeed": 2.41,
-          "windDirection": 61,
-          "pressure": 1015
-        },
         {
           "id": "0b80a5b0-1412-11ec-92a1-f546140b1e06",
           "time": "12/9/2021, 22:40:27",
@@ -69,12 +59,23 @@
           "windSpeed": 2.63,
           "windDirection": 297,
           "pressure": 1021
+        },
+        {
+          "id": "b71f0350-286e-11ed-be4f-2fe05ddf9327",
+          "time": "8/30/2022, 2:19:10 PM",
+          "input": "Auto",
+          "code": 801,
+          "temperature": 20.69,
+          "windSpeed": 3.81,
+          "windDirection": 99,
+          "pressure": 1026
         }
       ]
     },
     {
       "id": "040a3130-213a-11ed-9103-93f91e468f06",
       "userid": "1621aa60-1d8e-11ed-8e10-65306850a396",
+      "title": "Gorey, Co Wexford",
       "latitude": "123",
       "longitude": "125",
       "report": {
@@ -129,67 +130,6 @@
           "temperature": 24,
           "windSpeed": 21,
           "windDirection": 100,
-          "pressure": 909
-        }
-      ]
-    },
-    {
-      "id": "1f5504c0-2481-11ed-91aa-d9cbac6c8669",
-      "userid": "dc725050-09e6-11ec-a2c3-b7fd0fd485ab",
-      "latitude": "12",
-      "longitude": "7",
-      "report": {
-        "time": "8/27/2022, 7:42:56 AM",
-        "code": 301,
-        "conditions": "Drizzle",
-        "icon": "cloud rain",
-        "tempC": 9,
-        "tempF": 48.2,
-        "windSpeed": 8,
-        "beaufort": 2,
-        "windChill": 7.83,
-        "windDirection": 120,
-        "windCompass": "ESE",
-        "pressure": 909,
-        "minTemp": 9,
-        "maxTemp": 23,
-        "tempTrend": "arrows alternate horizontal",
-        "minWind": 4.25,
-        "maxWind": 12,
-        "windTrend": "arrows alternate horizontal",
-        "minPressure": 909,
-        "maxPressure": 1011,
-        "pressureTrend": "arrow down"
-      },
-      "readings": [
-        {
-          "id": "6e44a6f0-25d8-11ed-88a0-75bce82abcb5",
-          "time": "8/27/2022, 7:18:21 AM",
-          "input": "Auto",
-          "code": 500,
-          "temperature": 21.16,
-          "windSpeed": 4.25,
-          "windDirection": 222,
-          "pressure": 1011
-        },
-        {
-          "id": "7ec77d40-25d8-11ed-88a0-75bce82abcb5",
-          "time": "8/27/2022, 7:18:48 AM",
-          "input": "Manual",
-          "code": 202,
-          "temperature": 23,
-          "windSpeed": 12,
-          "windDirection": 200,
-          "pressure": 1001
-        },
-        {
-          "id": "dda72e20-25db-11ed-9edb-eb59de67ccda",
-          "time": "8/27/2022, 7:42:56 AM",
-          "input": "Manual",
-          "code": 301,
-          "temperature": 9,
-          "windSpeed": 8,
-          "windDirection": 120,
           "pressure": 909
         }
       ]
@@ -252,6 +192,182 @@
           "windSpeed": 3.96,
           "windDirection": 217,
           "pressure": 1013
+        }
+      ]
+    },
+    {
+      "id": "ef61a2d0-2888-11ed-9006-e770b148d4c2",
+      "userid": "ded4f860-25de-11ed-9edb-eb59de67ccda",
+      "title": "Blarney",
+      "latitude": "112",
+      "longitude": "-12",
+      "report": {
+        "time": "8/30/2022, 5:36:14 PM",
+        "code": 210,
+        "conditions": "Light thunderstorm",
+        "icon": "bolt",
+        "tempC": 2,
+        "tempF": 35.6,
+        "windSpeed": 1,
+        "beaufort": 0,
+        "windChill": 3.79,
+        "windDirection": 160,
+        "windCompass": "SSE",
+        "pressure": 908,
+        "minTemp": 1,
+        "maxTemp": 43,
+        "tempTrend": "arrows alternate horizontal",
+        "minWind": 1,
+        "maxWind": 12,
+        "windTrend": "arrows alternate horizontal",
+        "minPressure": 908,
+        "maxPressure": 1009,
+        "pressureTrend": "arrows alternate horizontal"
+      },
+      "readings": [
+        {
+          "id": "06834450-2889-11ed-9006-e770b148d4c2",
+          "time": "8/30/2022, 5:27:30 PM",
+          "input": "Manual",
+          "code": 311,
+          "temperature": 43,
+          "windSpeed": 1,
+          "windDirection": 111,
+          "pressure": 1000
+        },
+        {
+          "id": "32ec7020-2889-11ed-9006-e770b148d4c2",
+          "time": "8/30/2022, 5:28:44 PM",
+          "input": "Manual",
+          "code": 500,
+          "temperature": 1,
+          "windSpeed": 12,
+          "windDirection": 230,
+          "pressure": 1009
+        },
+        {
+          "id": "3ef3b3f0-288a-11ed-9006-e770b148d4c2",
+          "time": "8/30/2022, 5:36:14 PM",
+          "input": "Manual",
+          "code": 210,
+          "temperature": 2,
+          "windSpeed": 1,
+          "windDirection": 160,
+          "pressure": 908
+        }
+      ]
+    },
+    {
+      "id": "441104b0-2889-11ed-9006-e770b148d4c2",
+      "userid": "ded4f860-25de-11ed-9edb-eb59de67ccda",
+      "title": "Gorey",
+      "latitude": "78",
+      "longitude": "8",
+      "report": {
+        "time": "8/30/2022, 5:32:30 PM",
+        "code": 231,
+        "conditions": "Thunderstorm with drizzle",
+        "icon": "bolt",
+        "tempC": 23,
+        "tempF": 73.4,
+        "windSpeed": 1,
+        "beaufort": 0,
+        "windChill": 25.16,
+        "windDirection": 100,
+        "windCompass": "E",
+        "pressure": 909,
+        "minTemp": 3.43,
+        "maxTemp": 23,
+        "tempTrend": "arrows alternate horizontal",
+        "minWind": 1,
+        "maxWind": 1.94,
+        "windTrend": "arrows alternate horizontal",
+        "minPressure": 909,
+        "maxPressure": 1026,
+        "pressureTrend": "arrows alternate horizontal"
+      },
+      "readings": [
+        {
+          "id": "46ab5ea0-2889-11ed-9006-e770b148d4c2",
+          "time": "8/30/2022, 5:29:17 PM",
+          "input": "Auto",
+          "code": 804,
+          "temperature": 3.43,
+          "windSpeed": 1.94,
+          "windDirection": 321,
+          "pressure": 1026
+        },
+        {
+          "id": "498a1490-2889-11ed-9006-e770b148d4c2",
+          "time": "8/30/2022, 5:29:22 PM",
+          "input": "Auto",
+          "code": 804,
+          "temperature": 3.43,
+          "windSpeed": 1.94,
+          "windDirection": 321,
+          "pressure": 1026
+        },
+        {
+          "id": "b94b16d0-2889-11ed-9006-e770b148d4c2",
+          "time": "8/30/2022, 5:32:30 PM",
+          "input": "Manual",
+          "code": 231,
+          "temperature": 23,
+          "windSpeed": 1,
+          "windDirection": 100,
+          "pressure": 909
+        }
+      ]
+    },
+    {
+      "id": "d37898c0-2889-11ed-9006-e770b148d4c2",
+      "userid": "dc725050-09e6-11ec-a2c3-b7fd0fd485ab",
+      "title": "Cork City",
+      "latitude": "79",
+      "longitude": "8",
+      "report": {
+        "time": "8/30/2022, 5:34:05 PM",
+        "code": 221,
+        "conditions": "Ragged thunderstorm",
+        "icon": "bolt",
+        "tempC": 2,
+        "tempF": 35.6,
+        "windSpeed": 11,
+        "beaufort": 2,
+        "windChill": -1.16,
+        "windDirection": 145,
+        "windCompass": "SE",
+        "pressure": 1004,
+        "minTemp": 2,
+        "maxTemp": 45,
+        "tempTrend": "question",
+        "minWind": 4,
+        "maxWind": 11,
+        "windTrend": "question",
+        "minPressure": 1001,
+        "maxPressure": 1004,
+        "pressureTrend": "question"
+      },
+      "readings": [
+        {
+          "id": "e49d5460-2889-11ed-9006-e770b148d4c2",
+          "time": "8/30/2022, 5:33:42 PM",
+          "input": "Manual",
+          "code": 300,
+          "temperature": 45,
+          "windSpeed": 4,
+          "windDirection": 250,
+          "pressure": 1001
+        },
+        {
+          "id": "f2270ef0-2889-11ed-9006-e770b148d4c2",
+          "time": "8/30/2022, 5:34:05 PM",
+          "input": "Manual",
+          "code": 221,
+          "temperature": 2,
+          "windSpeed": 11,
+          "windDirection": 145,
+          "pressure": 1004
         }
       ]
     }
