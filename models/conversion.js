@@ -42,7 +42,7 @@ weatherConditions.set(616, { description: "Rain and snow", icon: "snowflake" });
 weatherConditions.set(620, { description: "Light shower snow", icon: "snowflake" });
 weatherConditions.set(621, { description: "Shower snow", icon: "snowflake" });
 weatherConditions.set(622, { description: "Heavy shower snow", icon: "snowflake" });
-weatherConditions.set(701, { description: "Mist", icon: "smog" });
+weatherConditions.set(700, { description: "Mist", icon: "smog" });
 weatherConditions.set(711, { description: "Smoke", icon: "smog" });
 weatherConditions.set(721, { description: "Haze", icon: "smog" });
 weatherConditions.set(731, { description: "Sand/dust whirls", icon: "smog" });
