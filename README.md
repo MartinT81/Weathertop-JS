@@ -2,7 +2,7 @@ Web-development/Programming Assignment 3 - assignment completed in JavaScript an
 
 Assignment Brief:
 To create an application for WeatherTop Inc. To assist WeatherTop members to submit weather readings from their station and submit via the web site. 
-The application displays weather analytics for the station. This relates to multiple stations in Ireland.
+The application displays weather analytics for the station. This relates to multiple stations in Ireland. This app allows for the conversion of readings into other metrics such as celcius to Fahrenheit.
 
 Grading bands: All requirements for release 3 have been met. elements of release 3 include Time/Date stamp, Latest reading displayed withing the station, stations in alphabetical order, user edit details, a commit history for Github
 in submission. The architectural structure used in the creation of this app is Model - View - Controller. 
@@ -20,6 +20,14 @@ line 36 to 54- controllers/station.js addReading and models/station-store.js lin
 Lines 21 - 23 views/partials/trendchart/station.hbs weather trends are comprised of pressure, temp and wind trends accumulated and in trendchart.hbs and rendered via both the station.hbs.
 
 Line 56 -80 Generates autoReading using the openweathermao URL. This can be found in controllers/station.js
+
+models/conversion.js - here the code converts readings from one mtetric to another. It also determines the weather condiotns from the readings inputted. This is achieved using, eg an if statement 
+on lines 77  to 105 to convert wind speed from KM to Beaufort. 
+
+Trend charts/graphs are rendered to the dashboard and station.hbs. Through views/partials/pressuretrednchart.hbs & views/partials/temptrendchart & views/partials/windtrendchart.
+The trend charts are amalgamated into views/partials/trendchart
+
+Line 19 to 25 - Frappe chart used to display simple line, bar or percentage graphs/charts.
 
 
 ........
@@ -65,6 +73,8 @@ readings are entered they will display as the latest readings. Stations are disp
 Line 14 to 17 - models/user-store.js, adding a new user in WeatherTop. First Name Surname , email and password (Line 27 to 32). User information is store in models/user-store.json.
 
 Line 30 to 36 - controllers/ accounts.js, method to allow a new member to register
+
+Line 38 to 45 - controllers/accounts edit user details. a form to do so is found in views/ edit.hbs
 
 json - store contains various methods relating to the storage of inputted information such as user, station readings etc. 
 
