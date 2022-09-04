@@ -2,7 +2,7 @@
 
 const _ = require("lodash");
 const JsonStore = require("./json-store");
-const conversion = require("./conversion");
+const conversion = require("../models/conversion");
 const analytics = require ("../utils/analytics");
 
 

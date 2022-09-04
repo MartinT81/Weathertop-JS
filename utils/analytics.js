@@ -1,6 +1,7 @@
 "use strict";
 
 const logger = require("../utils/logger");
+const conversion = require ("../models/conversion");
 const axios = require("axios");
 
 const analytics = {
@@ -74,5 +75,6 @@ const analytics = {
       }
     }
   }
+  
 };
 module.exports = analytics;
