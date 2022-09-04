@@ -1,8 +1,6 @@
 "use strict";
 
 
-
-
 const weatherConditions = new Map();
 weatherConditions.set(200, { description: "Thunderstorm with light rain", icon: "bolt" });
 weatherConditions.set(201, { description: "Thunderstorm with rain", icon: "bolt" });
@@ -14,7 +12,7 @@ weatherConditions.set(221, { description: "Ragged thunderstorm", icon: "bolt" })
 weatherConditions.set(230, { description: "Thunderstorm with light drizzle", icon: "bolt" });
 weatherConditions.set(231, { description: "Thunderstorm with drizzle", icon: "bolt" });
 weatherConditions.set(232, { description: "Thunderstorm with heavy drizzle", icon: "bolt" });
-weatherConditions.set(300, { description: "Light intensity drizzle", icon: "cloud rain" });
+weatherConditions.set(300, { description: "Light rain", icon: "cloud rain" });
 weatherConditions.set(301, { description: "Drizzle", icon: "cloud rain" });
 weatherConditions.set(302, { description: "Heavy intensity drizzle", icon: "cloud rain" });
 weatherConditions.set(310, { description: "Light intensity drizzle rain", icon: "cloud rain" });
@@ -44,7 +42,7 @@ weatherConditions.set(616, { description: "Rain and snow", icon: "snowflake" });
 weatherConditions.set(620, { description: "Light shower snow", icon: "snowflake" });
 weatherConditions.set(621, { description: "Shower snow", icon: "snowflake" });
 weatherConditions.set(622, { description: "Heavy shower snow", icon: "snowflake" });
-weatherConditions.set(701, { description: "Mist", icon: "smog" });
+weatherConditions.set(700, { description: "Mist", icon: "smog" });
 weatherConditions.set(711, { description: "Smoke", icon: "smog" });
 weatherConditions.set(721, { description: "Haze", icon: "smog" });
 weatherConditions.set(731, { description: "Sand/dust whirls", icon: "smog" });
@@ -59,6 +57,7 @@ weatherConditions.set(801, { description: "Few clouds: 11-25%", icon: "cloud sun
 weatherConditions.set(802, { description: "Scattered clouds: 25-50%", icon: "cloud" });
 weatherConditions.set(803, { description: "Broken clouds: 51-84%", icon: "cloud" });
 weatherConditions.set(804, { description: "Overcast clouds: 85-100%", icon: "cloud" });
+
 
 const conversion = {
   weatherDescription(key) {

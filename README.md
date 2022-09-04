@@ -4,13 +4,13 @@ Assignment Brief:
 To create an application for WeatherTop Inc. To assist WeatherTop members to submit weather readings from their station and submit via the web site. 
 The application displays weather analytics for the station. This relates to multiple stations in Ireland. This app allows for the conversion of readings into other metrics such as celcius to Fahrenheit.
 
-Grading bands: All requirements for release 3 have been met. elements of release 3 include Time/Date stamp, Latest reading displayed withing the station, stations in alphabetical order, user edit details, a commit history for Github
+Grading bands: All requirements for release 4, other than the station map view requirement, have been met. elements of release 3 include Time/Date stamp, Latest reading displayed withing the station, stations in alphabetical order, user edit details, a commit history for Github
 in submission. The architectural structure used in the creation of this app is Model - View - Controller. 
 
 ........
 
 Displayed Reading - 
-To achieve release 3 for Reading, Code Temp and Wind Speed from Baseline to Pressure and Time/Date stamp have been included, as well as weather trends.
+To achieve release 4 for Reading, Code Temp and Wind Speed from Baseline to Pressure and Time/Date stamp have been included, as well as weather trends.
 This is achieved via the station.js controller which receives a request from station-store.js and is rendered via station.hbs
 
 Code examples -
